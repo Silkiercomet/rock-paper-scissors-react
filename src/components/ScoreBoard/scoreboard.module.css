@@ -1,0 +1,46 @@
+.scoreBoard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 3px solid var(--HeaderOutline);
+    border-radius: 12px;
+    transform: translateY(25px);
+}
+.left p{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.right{
+    background-color: white;
+    border-radius: 12px;
+    height: 100%;
+    text-align: center;
+    padding: 1rem 2.5rem;
+    
+}
+.right p:first-of-type{
+    color: var(--ScoreText);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.right p:last-of-type{
+    color: var(--DarkText);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.bonus {
+    font-size: 1.2rem;
+}
+@media (max-width:710px){
+    .scoreBoard{
+        max-width: 90%;
+    }
+}
